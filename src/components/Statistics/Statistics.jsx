@@ -23,7 +23,7 @@ export const Statistics = ({
       <StatisticItem color="#f54e3b">
         <StatisticValue>Bad: {bad}</StatisticValue>
       </StatisticItem>
-      <StatisticItem color="#e71fd9">
+      <StatisticItem color="#1c7adf">
         <StatisticValue>Total: {total()}</StatisticValue>
       </StatisticItem>
       <StatisticItem color="#27c31c">

@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-const StatisticContainer = styled.ul`
+export const StatisticContainer = styled.ul`
   display: flex;
   justify-content: center;
   gap: 10px;
   padding: 0;
 `;
 
-const StatisticItem = styled.li`
+export const StatisticItem = styled.li`
   display: flex;
   padding: 7px;
   background-color: ${({ color }) => color};
@@ -20,9 +20,7 @@ const StatisticItem = styled.li`
   }
 `;
 
-const StatisticValue = styled.p`
+export const StatisticValue = styled.p`
   margin: 0;
   font-weight: 600;
 `;
-
-export { StatisticContainer, StatisticItem, StatisticValue };

@@ -4,6 +4,13 @@ import {
   FeedbackOptionBtn,
 } from "./FeedbackOptions.styled";
 
+import {
+  BsEmojiHeartEyes,
+  BsEmojiNeutral,
+  BsEmojiFrown,
+  BsEmojiSmile,
+} from "react-icons/bs";
+
 export const FeedBackOptions = ({ options, onStateUpdate }) => {
   return (
     <FeedbackOptionsList>
@@ -14,6 +21,15 @@ export const FeedBackOptions = ({ options, onStateUpdate }) => {
             onClick={() => onStateUpdate(option)}
           >
             {option}
+            {option === "good" ? (
+              <BsEmojiHeartEyes />
+            ) : option === "neutral" ? (
+              <BsEmojiNeutral />
+            ) : option === "bad" ? (
+              <BsEmojiFrown />
+            ) : (
+              <BsEmojiSmile />
+            )}
           </FeedbackOptionBtn>
         </li>
       ))}

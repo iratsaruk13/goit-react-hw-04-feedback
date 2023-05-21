@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
-const Notice = styled.p`
-  color: #033b16;
+export const Notice = styled.p`
+  color: #18048a;
   font-size: 20px;
 `;
-
-export { Notice };
